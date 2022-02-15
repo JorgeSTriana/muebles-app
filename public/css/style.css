@@ -1,0 +1,246 @@
+/*  *{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+} */
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* ======================= nav bootstrap =============== */
+.appheader{
+    position: sticky;
+    top: 0;
+     z-index: 100;
+}
+.img-logo{
+    margin-left: 20px;
+}
+.navbar-all{
+    background-color: rgb(230, 230, 226);
+}
+.navbar .navbar-brand{
+    margin-left: 20px;
+}
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+.form-inline{
+    display: flex;
+    gap: .5rem;
+    justify-content: space-around;
+
+}
+.my-2{
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+}
+
+.menu-der{
+    align-items: center;
+}
+#search-btn{
+    font-size: 1em;
+    border-radius: 5px;
+}
+#search{
+    margin-bottom: 0;
+    margin-top: 0;
+    width: auto;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+.btn-principales{
+    font-size: 1.5em;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #000;
+}
+.btns-principales{
+    width: 50%;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar-dark .navbar-nav a.nav-link{
+    color: #000;
+    font-size: 1.5rem;
+}
+/* .mb-2{
+    margin-bottom: 0rem;
+} */
+.b-avatar{
+    background: #fff;
+    margin-right: 2rem; 
+}
+ul.navbar-nav{
+    gap: 2rem;
+}
+
+.navbar-toggler{
+    margin-right: 2rem;
+}
+
+
+/* @media(max-width: 769px){
+    .avatar{
+        display:none;
+    }
+    .user{
+        margin-left: 0rem;
+    }
+} */
+/* @media(min-width: 769px){
+    .user{
+        display:none;
+    }
+} */
+
+
+/* ========================= START HOME ==================== */
+/* .container.btn-new-category{
+    justify-content: right;
+    float: right;
+    margin-top: 10px;
+}
+ */
+.btn-new-category{
+    /* width: 100vh;
+    justify-content: right; */
+    align-self: flex-end;
+    margin-top: 10px;
+}
+.btn-new-category .new-category{
+    /* width: 100vh;
+    justify-content: right; */
+    /* align-self: flex-end; */
+    margin-top: 10px;
+}
+.container img{
+    width: fit-content;
+}
+.container{
+    /* height: 80vh; */
+    display: flex;
+    width: fit-content;
+/*     height: 100%; */
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+.container .categorias{
+    display: grid;
+    margin-top: auto;
+    margin-bottom: auto;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    
+}
+.container .categorias .categoria1{
+    background: url(/img/alcoba.jpg);
+    margin-top: 5%;
+    margin-bottom: 10%;
+    min-height: 350px;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid;
+    box-shadow: 5px 10px;
+}
+.container .categorias .categoria2{
+    background: url(/img/comedor.jpg);
+    margin-top: 5%;
+    margin-bottom: 10%;
+    min-height: 350px;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid;  
+    box-shadow: 5px 10px; 
+}
+.container .categoria1 .textos h3{
+    font-size: 4em;
+}
+.container .categoria2 .textos h3{
+    font-size: 4em;
+}
+.container .categoria1 .textos .price {   /* posiblemente se quita */
+    position: absolute;
+    top: 1rem;
+    left: 3rem;
+    background: #e01021;
+    color: #fff;
+    font-size: 2rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    border: solid #000 1px;
+    box-shadow: 2px 5px rgb(44, 43, 43);
+}
+.container .categoria2 .textos .price {   /* posiblemente se quita */
+    position: absolute;
+    top: 1rem;
+    left: 3rem;
+    background: #e01021;
+    color: #fff;
+    font-size: 2rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    border: solid #000 1px;
+    box-shadow: 2px 5px rgb(44, 43, 43);
+}
+
+/* ========================= END HOME ==================== */
+
+/* ========================= START FOOTER ==================== */
+.footer{
+    justify-content: end;
+    margin-bottom: 0px;
+}
+.page-footer2 .container{
+    height: auto;
+}
+#footer{
+    /* position: fixed;*/
+    /* bottom: 0; */
+    width: 100%;
+    height: fit-content; 
+   }
+.page-footer2 {
+    position: absolute;
+    /* margin-top: 20px; */
+    padding-top: 20px;
+    background-color: #038c73;
+}
+.page-footer2 .footer-copyright {
+     
+    height: 50px;
+    line-height: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(51, 51, 51, 0.08);
+}
+
+   .redes{
+       display: flex;
+   }
+
+
+
+
