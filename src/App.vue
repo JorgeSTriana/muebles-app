@@ -10,11 +10,11 @@
 /* import AppHeader from '@/components/AppHeader.vue' */
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     /* AppHeader */
-  }
-}
+  },
+};
 </script>
 
 <style>
@@ -24,15 +24,15 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;*/ 
+  margin-top: 60px;*/
   position: relative;
   margin: 0;
-  padding: 0;
+  padding: 0 10%;
   box-sizing: border-box;
   outline: none;
   border: none;
   text-decoration: none;
   text-transform: capitalize;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 </style>
