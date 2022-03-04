@@ -2,7 +2,9 @@
     <div>
         <div v-for="user in users" v-bind:key="user.login.uuid">
             <img :src="user.picture.medium" alt="">     <!-- los dos puntos es  para acceder a un objeto  -->
-            <h2>{{ user.name.first+" "+user.name.last }}</h2>
+            <!-- <h2>{{ user.name.first+" "+user.name.last }}</h2> -->
+            <h2>{{ user.name.first+" "+user.name.last | upper}}</h2>
+            <h2>{{ user.phone | noline}}</h2>
         </div>
     </div>
 </template>
