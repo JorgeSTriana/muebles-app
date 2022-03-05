@@ -4,9 +4,12 @@ import BootstrapVue from 'bootstrap-vue'
 import "bootstrap-vue/dist/bootstrap-vue.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 import router from '@/router'
-Vue.config.productionTip = false
+import { nameFilter } from '@/filters'
+import { phoneFilter } from '@/filters'
 
 Vue.config.productionTip = false
+Vue.filter('upper', nameFilter)
+Vue.filter('noline', phoneFilter)
 Vue.use(BootstrapVue)
 
 new Vue({
