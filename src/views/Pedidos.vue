@@ -4,8 +4,12 @@
 
     <aside>
       <ul>
-        <li><button>Nuevo</button></li>
-        <li><button>Detalles</button></li>
+        <li>
+          <button id="pedido_nuevo" onClick="new_pedido()">Nuevo</button>
+        </li>
+        <!-- <AppPedidosNuevos></AppPedidosNuevos>
+        <AppPedidosDetalles></AppPedidosDetalles> -->
+        <li><button id="pedido_nuevo1">Detalles</button></li>
         <!-- <li><button>Pintura</button></li>
         <li><button>Engallado</button></li> -->
       </ul>
@@ -49,12 +53,23 @@ button:hover {
 <script>
 import AppHeader from "@/components/AppHeader.vue";
 import AppFooter from "@/components/AppFooter.vue";
+// import AppPedidosNuevos from "@/components/AppPedidosNuevos.vue";
+// import AppPedidosDetalles from "@/components/AppPedidosDetalles.vue";
 
 export default {
-  name: "Materiales",
+  name: "Pedidos",
   components: {
     AppHeader,
     AppFooter,
+    // AppPedidosNuevos,
+    // AppPedidosDetalles,
   },
 };
+</script>
+
+<script>
+const nuevo = document.getElementById("pedido_nuevo");
+function new_pedido(nuevo) {
+  alert("Hola");
+}
 </script>

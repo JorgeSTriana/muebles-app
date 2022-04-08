@@ -27,7 +27,7 @@ export default {
   margin-top: 60px;*/
   position: relative;
   margin: 0;
-  padding: 0 10%;
+  padding: 0;
   box-sizing: border-box;
   outline: none;
   border: none;
